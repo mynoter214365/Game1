@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function Game() {
+        for (let numberOfTime = 1; numberOfTime <= 3; numberOfTime++) {
+          trueNumber = 40;
+          let number = +prompt("숫자 입력");
+          if (number > trueNumber) {
+            alert("down");
+          }
+          if (number < trueNumber) {
+            alert("up");
+          }
+          if (number === 40) {
+            return alert("축하해요");
+          }
+        }
+        return alert("아이쿠 답은 40입니다");
+      }
+      Game(1);
+    </script>
+  </head>
+  <body></body>
+</html>
